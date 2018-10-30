@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/flexible.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="list-box">
+                <ul class="list">
+                    <li>推荐</li>
+                    <li>女装</li>
+                    <li>美食</li>
+                    <li>居家</li>
+                    <li>美妆个护</li>
+                    <li>男装</li>
+                    <li>内衣</li>
+                    <li>美鞋</li>
+                    <li>彩妆</li>
+                    <li>电子产品</li>
+                    <li>药品</li>
+                </ul>
+            </div>
+
+        </header>
+        <section>
+            <div class="nav">
+                <p>热销爆款</p>
+                <a href="#">共有3款</a>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/a.jpg" alt="" width="32%">
+                        <img src="img/b.jpg" alt="" width="32%">
+                        <img src="img/c.jpg" alt="" width="32%">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/d.jpg" alt="" width="32%">
+                        <img src="img/e.jpg" alt="" width="32%">
+                        <img src="img/f.jpg" alt="" width="32%">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/a.jpg" alt="" width="32%">
+                        <img src="img/e.jpg" alt="" width="32%">
+                        <img src="img/c.jpg" alt="" width="32%">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/d.jpg" alt="" width="32%">
+                        <img src="img/f.jpg" alt="" width="32%">
+                        <img src="img/b.jpg" alt="" width="32%">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <footer>
+            <dl>
+                <dt class="iconfont icon-shouye"></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt class="iconfont icon-gongzuo"></dt>
+                <dd>分页</dd>
+            </dl>
+            <dl>
+                <dt class="iconfont icon-biaoqian"></dt>
+                <dd>品牌特卖</dd>
+            </dl>
+            <dl>
+                <dt class="iconfont icon-youhuiquan-01"></dt>
+                <dd>5元包邮</dd>
+            </dl>
+            <dl>
+                <dt class="iconfont icon-wode"></dt>
+                <dd>我的</dd>
+            </dl>
+        </footer>
+    </div>
+
+    <script src="js/better-scroll.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var listBox = document.querySelector('.list-box');
+        var bs = new BScroll(listBox, {
+            scrollX: true
+        })
+
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        });
+    </script>
+</body>
+
+</html>
